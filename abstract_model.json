@@ -1,0 +1,979 @@
+{
+	"devices": {
+		"device_1": {
+			"id": 1,
+			"name": "Server",
+			"components": {
+				"element_8": {
+					"id": 24,
+					"name": "vandal-proof device case",
+					"components": {
+						"element_4": {
+							"id": 16,
+							"name": "one-board computer",
+							"components": {
+								"element_5": {
+									"id": 21,
+									"name": "micro SD",
+									"components": {
+										"element_1": {
+											"id": 1,
+											"name": "32-bit operating system",
+											"components": {
+												"element_3": {
+													"id": 3,
+													"name": "application with graphical user interface",
+													"components": {},
+													"links": {},
+													"requirements": {
+														"requirement_1": {
+															"id": 40,
+															"name": "devices isolation / limitation algorithm"
+														},
+														"requirement_2": {
+															"id": 9,
+															"name": "devices communication algorithm"
+														},
+														"requirement_3": {
+															"id": 39,
+															"name": "devices behaviour-based anomaly detection algorithm"
+														},
+														"requirement_4": {
+															"id": 8,
+															"name": "data presentation algorithm"
+														},
+														"requirement_5": {
+															"id": 7,
+															"name": "data processing algorithm"
+														},
+														"requirement_6": {
+															"id": 6,
+															"name": "application-database connection"
+														}
+													},
+													"dependencies": {},
+													"parent": "element_1"
+												},
+												"element_2": {
+													"id": 2,
+													"name": "sql database",
+													"components": {},
+													"links": {},
+													"requirements": {
+														"requirement_1": {
+															"id": 35,
+															"name": "strong login credentials"
+														},
+														"requirement_2": {
+															"id": 45,
+															"name": "strict access policy"
+														},
+														"requirement_3": {
+															"id": 43,
+															"name": "backup mechanism"
+														},
+														"requirement_4": {
+															"id": 44,
+															"name": "input data validation algorithm"
+														}
+													},
+													"dependencies": {},
+													"parent": "element_1"
+												},
+												"element_6": {
+													"id": 25,
+													"name": "wireless access point",
+													"components": {},
+													"links": {},
+													"requirements": {
+														"requirement_1": {
+															"id": 35,
+															"name": "strong login credentials"
+														},
+														"requirement_2": {
+															"id": 38,
+															"name": "secure key distribution mechanism"
+														},
+														"requirement_3": {
+															"id": 33,
+															"name": "communication data encryption and decryption algorithm"
+														}
+													},
+													"dependencies": {},
+													"parent": "element_1"
+												}
+											},
+											"links": {
+												"link_7": {
+													"id": 7,
+													"type": "install",
+													"parties": {
+														"element_3": {},
+														"element_2": {}
+													}
+												},
+												"link_11": {
+													"id": 11,
+													"type": "configure",
+													"parties": {
+														"element_6": {}
+													}
+												}
+											},
+											"requirements": {
+												"requirement_1": {
+													"id": 2,
+													"name": "software update server"
+												},
+												"requirement_2": {
+													"id": 5,
+													"name": "access point configuration mechanism"
+												},
+												"requirement_3": {
+													"id": 3,
+													"name": "software update mechanism"
+												}
+											},
+											"dependencies": {
+												"element_2": {},
+												"element_3": {}
+											},
+											"parent": "element_5"
+										}
+									},
+									"links": {
+										"link_7": {
+											"id": 7,
+											"type": "install",
+											"parties": {
+												"element_1": {}
+											}
+										}
+									},
+									"requirements": {},
+									"dependencies": {},
+									"parent": "element_4"
+								},
+								"element_7": {
+									"id": 5,
+									"name": "battery",
+									"components": {},
+									"links": {},
+									"requirements": {},
+									"dependencies": {},
+									"parent": "element_4"
+								}
+							},
+							"links": {
+								"link_12": {
+									"id": 12,
+									"type": "slot",
+									"parties": {
+										"element_5": {}
+									}
+								},
+								"link_3": {
+									"id": 3,
+									"type": "VG",
+									"parties": {
+										"element_7": {}
+									}
+								}
+							},
+							"requirements": {
+								"requirement_1": {
+									"id": 1,
+									"name": "wire network interface"
+								},
+								"requirement_2": {
+									"id": 4,
+									"name": "wireless network interface"
+								}
+							},
+							"dependencies": {
+								"element_1": {},
+								"element_5": {},
+								"element_7": {}
+							},
+							"parent": "element_8"
+						}
+					},
+					"links": {
+						"link_13": {
+							"id": 13,
+							"type": "placement",
+							"parties": {
+								"element_4": {}
+							}
+						}
+					},
+					"requirements": {},
+					"dependencies": {}
+				}
+			},
+			"recommendations": {},
+			"links": {}
+		},
+		"device_2": {
+			"id": 2,
+			"name": "Stations",
+			"components": {
+				"element_13": {
+					"id": 24,
+					"name": "vandal-proof device case",
+					"components": {
+						"element_7": {
+							"id": 17,
+							"name": "microcontroller for electronic components",
+							"components": {
+								"element_9": {
+									"id": 19,
+									"name": "firmware for electronic components",
+									"components": {},
+									"links": {},
+									"requirements": {
+										"requirement_1": {
+											"id": 18,
+											"name": "intruders detection algorithm"
+										},
+										"requirement_2": {
+											"id": 23,
+											"name": "microcontrollers communication algorithm"
+										},
+										"requirement_3": {
+											"id": 11,
+											"name": "firmware update mechanism"
+										},
+										"requirement_4": {
+											"id": 34,
+											"name": "mutual authentication algorithm"
+										},
+										"requirement_5": {
+											"id": 22,
+											"name": "parking direction algorithm"
+										},
+										"requirement_6": {
+											"id": 33,
+											"name": "communication data encryption and decryption algorithm"
+										},
+										"requirement_7": {
+											"id": 21,
+											"name": "server communication algorithm"
+										},
+										"requirement_8": {
+											"id": 24,
+											"name": "electronic components interaction algorithm"
+										}
+									},
+									"dependencies": {},
+									"parent": "element_7"
+								},
+								"element_11": {
+									"id": 23,
+									"name": "troyka shield",
+									"components": {
+										"element_8": {
+											"id": 18,
+											"name": "microcontroller for wireless communication",
+											"components": {
+												"element_10": {
+													"id": 20,
+													"name": "firmware for wireless communication",
+													"components": {},
+													"links": {},
+													"requirements": {
+														"requirement_1": {
+															"id": 26,
+															"name": "data collection algorithm for anomaly detection"
+														},
+														"requirement_2": {
+															"id": 23,
+															"name": "microcontrollers communication algorithm"
+														},
+														"requirement_3": {
+															"id": 11,
+															"name": "firmware update mechanism"
+														},
+														"requirement_4": {
+															"id": 34,
+															"name": "mutual authentication algorithm"
+														},
+														"requirement_5": {
+															"id": 33,
+															"name": "communication data encryption and decryption algorithm"
+														},
+														"requirement_6": {
+															"id": 21,
+															"name": "server communication algorithm"
+														}
+													},
+													"dependencies": {},
+													"parent": "element_8"
+												}
+											},
+											"links": {
+												"link_8": {
+													"id": 8,
+													"type": "flashing",
+													"parties": {
+														"element_10": {}
+													}
+												}
+											},
+											"requirements": {
+												"requirement_1": {
+													"id": 10,
+													"name": "bootloader"
+												},
+												"flash_kb": 250
+											},
+											"dependencies": {},
+											"parent": "element_11"
+										},
+										"element_1": {
+											"id": 9,
+											"name": "servo drive",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_11"
+										},
+										"element_5": {
+											"id": 14,
+											"name": "wireless signal transmitter",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_11"
+										},
+										"element_3": {
+											"id": 11,
+											"name": "noise sensor",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_11"
+										},
+										"element_2": {
+											"id": 10,
+											"name": "motion sensor",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_11"
+										},
+										"element_6": {
+											"id": 14,
+											"name": "wireless signal transmitter",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_11"
+										}
+									},
+									"links": {
+										"link_14": {
+											"id": 14,
+											"type": "TxRx",
+											"parties": {
+												"element_8": {}
+											}
+										},
+										"link_2": {
+											"id": 2,
+											"type": "SVG",
+											"parties": {
+												"element_1": {},
+												"element_5": {},
+												"element_3": {},
+												"element_2": {},
+												"element_6": {}
+											}
+										}
+									},
+									"requirements": {},
+									"dependencies": {
+										"element_1": {},
+										"element_2": {},
+										"element_3": {},
+										"element_5": {},
+										"element_6": {},
+										"element_8": {}
+									},
+									"parent": "element_7"
+								},
+								"element_12": {
+									"id": 5,
+									"name": "battery",
+									"components": {
+										"element_4": {
+											"id": 13,
+											"name": "wireless charge transmitter",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_12"
+										}
+									},
+									"links": {
+										"link_3": {
+											"id": 3,
+											"type": "VG",
+											"parties": {
+												"element_4": {}
+											}
+										}
+									},
+									"requirements": {},
+									"dependencies": {
+										"element_4": {}
+									},
+									"parent": "element_7"
+								}
+							},
+							"links": {
+								"link_8": {
+									"id": 8,
+									"type": "flashing",
+									"parties": {
+										"element_9": {}
+									}
+								},
+								"link_1": {
+									"id": 1,
+									"type": "pin-to-pin",
+									"parties": {
+										"element_11": {}
+									}
+								},
+								"link_3": {
+									"id": 3,
+									"type": "VG",
+									"parties": {
+										"element_12": {}
+									}
+								}
+							},
+							"requirements": {
+								"requirement_1": {
+									"id": 10,
+									"name": "bootloader"
+								},
+								"pins": 9,
+								"flash_kb": 320
+							},
+							"dependencies": {
+								"element_11": {},
+								"element_12": {}
+							},
+							"parent": "element_13"
+						}
+					},
+					"links": {
+						"link_13": {
+							"id": 13,
+							"type": "placement",
+							"parties": {
+								"element_7": {}
+							}
+						}
+					},
+					"requirements": {},
+					"dependencies": {}
+				}
+			},
+			"recommendations": {},
+			"links": {}
+		},
+		"device_3": {
+			"id": 3,
+			"name": "Robots",
+			"components": {
+				"element_19": {
+					"id": 24,
+					"name": "vandal-proof device case",
+					"components": {
+						"element_13": {
+							"id": 17,
+							"name": "microcontroller for electronic components",
+							"components": {
+								"element_15": {
+									"id": 19,
+									"name": "firmware for electronic components",
+									"components": {},
+									"links": {},
+									"requirements": {
+										"requirement_1": {
+											"id": 19,
+											"name": "intruders chase algorithm"
+										},
+										"requirement_2": {
+											"id": 18,
+											"name": "intruders detection algorithm"
+										},
+										"requirement_3": {
+											"id": 11,
+											"name": "firmware update mechanism"
+										},
+										"requirement_4": {
+											"id": 23,
+											"name": "microcontrollers communication algorithm"
+										},
+										"requirement_5": {
+											"id": 34,
+											"name": "mutual authentication algorithm"
+										},
+										"requirement_6": {
+											"id": 33,
+											"name": "communication data encryption and decryption algorithm"
+										},
+										"requirement_7": {
+											"id": 14,
+											"name": "obstacles detection algorithm"
+										},
+										"requirement_8": {
+											"id": 20,
+											"name": "parking algorithm"
+										},
+										"requirement_9": {
+											"id": 21,
+											"name": "server communication algorithm"
+										},
+										"requirement_10": {
+											"id": 24,
+											"name": "electronic components interaction algorithm"
+										},
+										"requirement_11": {
+											"id": 15,
+											"name": "obstacles avoidance algorithm"
+										},
+										"requirement_12": {
+											"id": 17,
+											"name": "path construction algorithm"
+										},
+										"requirement_13": {
+											"id": 13,
+											"name": "movement algorithm"
+										},
+										"requirement_14": {
+											"id": 16,
+											"name": "map construction algorithm"
+										},
+										"requirement_15": {
+											"id": 12,
+											"name": "charge monitoring algorithm"
+										}
+									},
+									"dependencies": {},
+									"parent": "element_13"
+								},
+								"element_17": {
+									"id": 22,
+									"name": "motor shield",
+									"components": {
+										"element_18": {
+											"id": 23,
+											"name": "troyka shield",
+											"components": {
+												"element_14": {
+													"id": 18,
+													"name": "microcontroller for wireless communication",
+													"components": {
+														"element_16": {
+															"id": 20,
+															"name": "firmware for wireless communication",
+															"components": {},
+															"links": {},
+															"requirements": {
+																"requirement_1": {
+																	"id": 26,
+																	"name": "data collection algorithm for anomaly detection"
+																},
+																"requirement_2": {
+																	"id": 23,
+																	"name": "microcontrollers communication algorithm"
+																},
+																"requirement_3": {
+																	"id": 11,
+																	"name": "firmware update mechanism"
+																},
+																"requirement_4": {
+																	"id": 34,
+																	"name": "mutual authentication algorithm"
+																},
+																"requirement_5": {
+																	"id": 33,
+																	"name": "communication data encryption and decryption algorithm"
+																},
+																"requirement_6": {
+																	"id": 21,
+																	"name": "server communication algorithm"
+																}
+															},
+															"dependencies": {},
+															"parent": "element_14"
+														}
+													},
+													"links": {
+														"link_8": {
+															"id": 8,
+															"type": "flashing",
+															"parties": {
+																"element_16": {}
+															}
+														}
+													},
+													"requirements": {
+														"requirement_1": {
+															"id": 10,
+															"name": "bootloader"
+														},
+														"flash_kb": 250
+													},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_10": {
+													"id": 12,
+													"name": "wireless signal receiver",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_7": {
+													"id": 9,
+													"name": "servo drive",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_5": {
+													"id": 7,
+													"name": "distance sensor",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_6": {
+													"id": 8,
+													"name": "touch sensor",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_9": {
+													"id": 11,
+													"name": "noise sensor",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_11": {
+													"id": 15,
+													"name": "encoder",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_8": {
+													"id": 10,
+													"name": "motion sensor",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												},
+												"element_12": {
+													"id": 15,
+													"name": "encoder",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_18"
+												}
+											},
+											"links": {
+												"link_14": {
+													"id": 14,
+													"type": "TxRx",
+													"parties": {
+														"element_14": {}
+													}
+												},
+												"link_2": {
+													"id": 2,
+													"type": "SVG",
+													"parties": {
+														"element_10": {},
+														"element_7": {},
+														"element_5": {},
+														"element_6": {},
+														"element_9": {},
+														"element_11": {},
+														"element_8": {},
+														"element_12": {}
+													}
+												}
+											},
+											"requirements": {},
+											"dependencies": {
+												"element_5": {},
+												"element_6": {},
+												"element_7": {},
+												"element_8": {},
+												"element_9": {},
+												"element_10": {},
+												"element_11": {},
+												"element_12": {},
+												"element_14": {}
+											},
+											"parent": "element_17"
+										},
+										"element_3": {
+											"id": 6,
+											"name": "collector motor",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_17"
+										},
+										"element_2": {
+											"id": 5,
+											"name": "battery",
+											"components": {
+												"element_1": {
+													"id": 4,
+													"name": "wireless charge receiver",
+													"components": {},
+													"links": {},
+													"requirements": {},
+													"dependencies": {},
+													"parent": "element_2"
+												}
+											},
+											"links": {
+												"link_3": {
+													"id": 3,
+													"type": "VG",
+													"parties": {
+														"element_1": {}
+													}
+												}
+											},
+											"requirements": {},
+											"dependencies": {
+												"element_1": {}
+											},
+											"parent": "element_17"
+										},
+										"element_4": {
+											"id": 6,
+											"name": "collector motor",
+											"components": {},
+											"links": {},
+											"requirements": {},
+											"dependencies": {},
+											"parent": "element_17"
+										}
+									},
+									"links": {
+										"link_1": {
+											"id": 1,
+											"type": "pin-to-pin",
+											"parties": {
+												"element_18": {}
+											}
+										},
+										"link_3": {
+											"id": 3,
+											"type": "VG",
+											"parties": {
+												"element_3": {},
+												"element_2": {},
+												"element_4": {}
+											}
+										}
+									},
+									"requirements": {
+										"motors": 2
+									},
+									"dependencies": {
+										"element_2": {},
+										"element_3": {},
+										"element_4": {}
+									},
+									"parent": "element_13"
+								}
+							},
+							"links": {
+								"link_8": {
+									"id": 8,
+									"type": "flashing",
+									"parties": {
+										"element_15": {}
+									}
+								},
+								"link_1": {
+									"id": 1,
+									"type": "pin-to-pin",
+									"parties": {
+										"element_17": {}
+									}
+								}
+							},
+							"requirements": {
+								"requirement_1": {
+									"id": 10,
+									"name": "bootloader"
+								},
+								"pins": 16,
+								"flash_kb": 540
+							},
+							"dependencies": {
+								"element_2": {},
+								"element_17": {},
+								"element_18": {}
+							},
+							"parent": "element_19"
+						}
+					},
+					"links": {
+						"link_13": {
+							"id": 13,
+							"type": "placement",
+							"parties": {
+								"element_13": {}
+							}
+						}
+					},
+					"requirements": {},
+					"dependencies": {}
+				}
+			},
+			"recommendations": {},
+			"links": {}
+		}
+	},
+	"recommendations": {
+		"recommendation_1": {
+			"id": 3,
+			"name": "to develop and use security policy regarding working with this system"
+		},
+		"recommendation_2": {
+			"id": 2,
+			"name": "to educate operators and users of the system about social engineering attacks"
+		}
+	},
+	"links": {
+		"link_615": {
+			"id": 75,
+			"type": "wireless",
+			"parties": {
+				"device_1": {
+					"device_2": {},
+					"device_3": {}
+				}
+			},
+			"dependencies": {
+				"dependency_116": {
+					"device_key": "device_1",
+					"element_key": "element_4"
+				},
+				"dependency_218": {
+					"device_key": "device_2",
+					"element_key": "element_8"
+				},
+				"dependency_125": {
+					"device_key": "device_1",
+					"element_key": "element_6"
+				},
+				"dependency_318": {
+					"device_key": "device_3",
+					"element_key": "element_14"
+				}
+			},
+			"requirements": {
+				"wireless": "true",
+				"data": "true",
+				"encryption": "true",
+				"authentication": "true",
+				"access_point": "true"
+			}
+		},
+		"link_168": {
+			"id": 168,
+			"type": "wireless",
+			"parties": {
+				"device_2": {
+					"device_3": {}
+				}
+			},
+			"dependencies": {
+				"dependency_34": {
+					"device_key": "device_3",
+					"element_key": "element_1"
+				},
+				"dependency_25": {
+					"device_key": "device_2",
+					"element_key": "element_12"
+				},
+				"dependency_35": {
+					"device_key": "device_3",
+					"element_key": "element_2"
+				},
+				"dependency_213": {
+					"device_key": "device_2",
+					"element_key": "element_4"
+				}
+			},
+			"requirements": {
+				"wireless": "true",
+				"charge": "true"
+			}
+		},
+		"link_1714": {
+			"id": 184,
+			"type": "wireless",
+			"parties": {
+				"device_2": {
+					"device_3": {}
+				}
+			},
+			"dependencies": {
+				"dependency_312": {
+					"device_key": "device_3",
+					"element_key": "element_10"
+				},
+				"dependency_214": {
+					"device_key": "device_2",
+					"element_key": "element_5"
+				}
+			},
+			"requirements": {
+				"wireless": "true",
+				"signal": "true"
+			}
+		}
+	}
+}
