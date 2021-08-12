@@ -1,0 +1,149 @@
+Security Recommendations
+{
+	'system': {
+		(2, 'to educate operators and users of the system about social engineering attacks'), 
+		(3, 'to develop and use security policy regarding working with this system')
+	}, 
+	'Server': set(), 
+	'Stations': set(), 
+	'Robots': set()
+}
+
+Abstract Elements and Sub-Elemenets
+{
+	'Server': {
+		(1, '32-bit operating system'): {
+			(5, 'access point configuration mechanism'), 
+			(2, 'software update server'), 
+			(3, 'software update mechanism')
+		}, 
+		(2, 'sql database'): {
+			(45, 'strict access policy'), 
+			(43, 'backup mechanism'),
+			(44, 'input data validation algorithm'),
+			(35, 'strong login credentials')
+		},
+		(3, 'application with graphical user interface'): {
+			(9, 'devices communication algorithm'), 
+			(7, 'data processing algorithm'), 
+			(40, 'devices isolation / limitation algorithm'), 
+			(39, 'devices behaviour-based anomaly detection algorithm'), 
+			(8, 'data presentation algorithm'), 
+			(6, 'application-database connection')
+		}, 
+		(16, 'one-board computer'): {
+			(1, 'wire network interface'), 
+			(4, 'wireless network interface')
+		}, 
+		(21, 'micro SD'): set(), 
+		(25, 'wireless access point'): {
+			(38, 'secure key distribution mechanism'), 
+			(33, 'communication data encryption and decryption algorithm'),
+			 (35, 'strong login credentials')
+		}, 
+		(5, 'battery'): set(), 
+		(24, 'vandal-proof device case'): set()
+	}, 
+	'Stations': {
+		(9, 'servo drive'): set(), 
+		(10, 'motion sensor'): set(), 
+		(11, 'noise sensor'): set(), 
+		(13, 'wireless charge transmitter'): set(), 
+		(14, 'wireless signal transmitter'): set(), 
+		(17, 'microcontroller for electronic components'): {
+			(10, 'bootloader')
+		}, 
+		(18, 'microcontroller for wireless communication'): {
+			(10, 'bootloader')
+		}, 
+		(19, 'firmware for electronic components'): {
+			(22, 'parking direction algorithm'), 
+			(21, 'server communication algorithm'), 
+			(24, 'electronic components interaction algorithm'), 
+			(34, 'mutual authentication algorithm'), 
+			(18, 'intruders detection algorithm'), 
+			(23, 'microcontrollers communication algorithm'), 
+			(33, 'communication data encryption and decryption algorithm'), 
+			(11, 'firmware update mechanism')
+		}, 
+		(20, 'firmware for wireless communication'): {
+			(21, 'server communication algorithm'),
+			(26, 'data collection algorithm for anomaly detection'),
+			(34, 'mutual authentication algorithm'),
+			(23, 'microcontrollers communication algorithm'),
+			(33, 'communication data encryption and decryption algorithm'),
+			(11, 'firmware update mechanism')
+		},
+		(23, 'troyka shield'): set(),
+		(5, 'battery'): set(),
+		(24, 'vandal-proof device case'): set()
+	}, 
+	'Robots': {
+			(4, 'wireless charge receiver'): set(), 
+			(5, 'battery'): set(), 
+			(6, 'collector motor'): set(), 
+			(7, 'distance sensor'): set(), 
+			(8, 'touch sensor'): set(), 
+			(9, 'servo drive'): set(), 
+			(10, 'motion sensor'): set(), 
+			(11, 'noise sensor'): set(), 
+			(12, 'wireless signal receiver'): set(), 
+			(15, 'encoder'): set(), 
+			(17, 'microcontroller for electronic components'): {
+				(10, 'bootloader')
+			}, 
+			(18, 'microcontroller for wireless communication'): {
+				(10, 'bootloader')
+			}, 
+			(19, 'firmware for electronic components'): {
+				(20, 'parking algorithm'), 
+				(16, 'map construction algorithm'), 
+				(12, 'charge monitoring algorithm'), 
+				(19, 'intruders chase algorithm'), 
+				(24, 'electronic components interaction algorithm'),
+				(21, 'server communication algorithm'),
+				(17, 'path construction algorithm'),
+				(14, 'obstacles detection algorithm'),
+				(13, 'movement algorithm'),
+				(18, 'intruders detection algorithm'),
+				(15, 'obstacles avoidance algorithm'),
+				(34, 'mutual authentication algorithm'),
+				(23, 'microcontrollers communication algorithm'),
+				(33, 'communication data encryption and decryption algorithm'),
+				(11, 'firmware update mechanism')
+			},
+			(20, 'firmware for wireless communication'): {
+				(21, 'server communication algorithm'),
+				(26, 'data collection algorithm for anomaly detection'),
+				(34, 'mutual authentication algorithm'),
+				(23, 'microcontrollers communication algorithm'),
+				(33, 'communication data encryption and decryption algorithm'),
+				(11, 'firmware update mechanism')
+			}, 
+			(22, 'motor shield'): set(),
+			(23, 'troyka shield'): set(),
+			(24, 'vandal-proof device case'): set()
+	}
+}
+
+Abstract Links and Abilities
+{
+	'Server': [
+		(10, 'wireless', 6, 'to communicate with other devices')
+	], 
+	'Stations': [
+		(10, 'wireless', 15, 'to communicate with the server'), 
+		(10, 'wireless', 16, 'to charge parked devices '), 
+		(10, 'wireless', 17, 'to help mobile robots to park near')
+	], 
+	'Robots': [
+		(10, 'wireless', 8, 'to be charged in a wireless way'), 
+		(10, 'wireless', 14, 'to park near charging stations'), 
+		(10, 'wireless', 15, 'to communicate with the server')
+	]
+}
+
+Security Elements
+{
+	4, 5, 9, 10, 11, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+}
